@@ -1,2 +1,2 @@
-# mobile-first-responsive-web-page
- portfoli mockup treehouse responsive page project
+Mobile First Responsive Web Page
+ Portfolio mockup, Team Treehouse responsive page project.
