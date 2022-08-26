@@ -149,8 +149,8 @@ MAIN STYLES
 }
 
 #name {
-    margin: 0 5vh;
-    padding-top: 6vh;
+    margin: 1em 2em;
+    padding-top: 2em;
     color: #000;
     font-size: .8rem;
     font-weight: bolder;
