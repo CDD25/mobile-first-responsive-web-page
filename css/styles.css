@@ -7,19 +7,16 @@ BASE STYLES, contains all base styles for my page.
     box-sizing: border-box;
 }
 
-/*
-html {
-    font-size: 1.25rem;
-}
-*/
-
 body {
     font-family: 'Lato', sans-serif;
     background-color: #eeebeb7b;
+    margin: 0 auto;
+    ;
+    max-width: 1024px;
 }
 
 h1 .my-name {
-    /* font-size: 1.5em;*/
+
     font-weight: bold;
     margin: 0;
     text-align: center;
@@ -85,13 +82,17 @@ MAIN STYLES
 .my-name {
     /* child element of flexbox no.1*/
     /*width: 50%;*/
-
+    margin: 0;
+    font-size: 1.3em;
     align-self: center;
 }
+
 
 .nav {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    width: 250px;
+
 }
 
 .nav a {
@@ -112,6 +113,18 @@ MAIN STYLES
     color: #0b0b0b;
     border-bottom-color: #52bab3;
 
+}
+
+img,
+h2,
+h3,
+p {
+    width: 90%;
+}
+
+.intro-container img {
+    width: 60%;
+    padding: 1em 0;
 }
 
 .main-content-container {
@@ -161,8 +174,6 @@ MAIN STYLES
 
 }
 
-
-
 span {
     color: slategray;
     font-weight: bold;
@@ -174,28 +185,9 @@ span {
 ===================================================
 MEDIA QUERIES
 ===================================================*/
-@media screen and (min-width:320px) {
-    .nav {
-        width: 250px;
-    }
+@media screen and (min-width:320px) {}
 
-    img,
-    h2,
-    h3,
-    p {
-        width: 90%;
-    }
 
-    .intro-container img {
-        width: 60%;
-        padding: 1em 0;
-    }
-}
-
-.my-name {
-    margin: 0;
-    font-size: 1.3em;
-}
 
 
 @media screen and (min-width:768px) {
