@@ -200,6 +200,17 @@ MEDIA QUERIES
         font-size: 1em;
     }
 
+    /*
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .intro-container img {
+        width: 60%;
+        padding: 1em 0;
+    }
+    */
 }
 
 @media screen and (min-width:1024px) {
