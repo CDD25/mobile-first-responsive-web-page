@@ -10,15 +10,17 @@ BASE STYLES, contains all base styles for my page.
 body {
     font-family: 'Lato', sans-serif;
     background-color: #eeebeb7b;
-    margin: 0 auto;
-    ;
+    margin: 0;
     max-width: 1024px;
 }
 
-h1 .my-name {
+a {
     font-weight: bold;
+    font-size: .5em;
     margin: 0;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -28,18 +30,19 @@ ul {
 
 h2 {
     text-transform: uppercase;
-    font-size: .9em;
+    font-size: 1.2em;
     padding: 3rem 0;
 }
 
 h3 {
-    padding: 1.5em 0;
+    padding: 1em 0;
 }
 
 .intro-container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 1rem 0 1rem;
+
 }
 
 img,
@@ -47,7 +50,8 @@ h2,
 h3,
 p {
     text-align: center;
-    margin: auto;
+    margin: 0 1em;
+    width: 90%;
 }
 
 p {
@@ -55,6 +59,7 @@ p {
     font-weight: 100;
     line-height: 1.3;
     padding: 10px 0px 30px 0;
+
 }
 
 /*
@@ -69,12 +74,6 @@ MAIN STYLES
 
 .main-header {
     padding-top: 2em;
-}
-
-.my-name {
-    margin: 0;
-    font-size: 1.3em;
-    align-self: center;
 }
 
 .nav {
@@ -96,24 +95,17 @@ MAIN STYLES
     text-decoration: none;
 }
 
-.nav a:hover {
-    color: #0b0b0b;
-    border-bottom-color: #52bab3;
-}
-
-img,
-h2,
-h3,
-p {
-    width: 90%;
+.my-name {
+    font-size: 2.25em;
 }
 
 .intro-container img {
     width: 60%;
     padding: 1em 0;
+    margin: auto;
 }
 
-.main-content-container {
+.portfolio-container {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -139,13 +131,13 @@ p {
     margin-bottom: 2em;
 }
 
-#contact {
+#phone #email {
     padding: .4em 0;
     margin: auto;
     align-self: center;
 }
 
-#name {
+#top {
     margin: 1em 2em;
     padding-top: 2em;
     color: #000;
@@ -165,7 +157,7 @@ span {
 
 /*
 ===================================================
-MEDIA QUERIES
+                    MEDIA QUERIES
 ===================================================*/
 
 @media screen and (min-width:768px) {
@@ -178,17 +170,26 @@ MEDIA QUERIES
 
     .nav li {
         display: inline-block;
-        width: auto;
-        margin-right: 15px;
-        background-color: transparent;
+        align-items: center;
+        width: 40%;
     }
 
+    /*
     .nav li:last-child {
         margin-right: 0;
     }
-
+*/
     .nav a {
-        color: black;
+        display: block;
+        color: #000;
+        background-color: transparent;
+        border: none;
+        font-size: .8rem;
+        padding: 0.7em;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 
     .main-header {
@@ -197,20 +198,49 @@ MEDIA QUERIES
     }
 
     .my-name {
-        font-size: 1em;
+        font-size: 1.5em;
+        margin: 1rem 0 1rem 0;
     }
 
-    /*
+
     .intro-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         margin: auto;
     }
+
     .intro-container img {
-        width: 60%;
-        padding: 1em 0;
+        width: 40%;
+        margin: auto 2rem;
     }
-    */
+
+    .intro-container p {
+        width: 50%;
+        text-align: left;
+        margin: auto 2rem;
+        line-height: 1.5;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 1024px;
+        justify-content: center;
+        background-color: white;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    img,
+    h3,
+    p {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width:1024px) {
