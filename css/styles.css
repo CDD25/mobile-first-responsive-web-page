@@ -11,7 +11,6 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: #eeebeb7b;
     margin: 0;
-    max-width: 1024px;
 }
 
 a {
@@ -79,7 +78,7 @@ MAIN STYLES
 .nav {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    width: 250px;
+    width: 20rem;
 }
 
 .nav a {
@@ -122,6 +121,11 @@ MAIN STYLES
     border-bottom: 0.5px solid lightgray;
 }
 
+.contact p {
+    width: 70%;
+    margin: auto;
+}
+
 .lower-footer {
     display: flex;
     flex-direction: row;
@@ -137,9 +141,9 @@ MAIN STYLES
     align-self: center;
 }
 
-#top {
+#top,
+h4 {
     margin: 1em 2em;
-    padding-top: 2em;
     color: #000;
     font-size: .8rem;
     font-weight: bolder;
@@ -157,15 +161,20 @@ span {
 
 /*
 ===================================================
-                    MEDIA QUERIES
+ MEDIA QUERIES -  min-width 768px
 ===================================================*/
 
 @media screen and (min-width:768px) {
+    .main-header {
+        height: 100px;
+        margin-bottom: 2em;
+    }
 
     .nav {
         margin-top: 0;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .nav li {
@@ -174,11 +183,6 @@ span {
         width: 40%;
     }
 
-    /*
-    .nav li:last-child {
-        margin-right: 0;
-    }
-*/
     .nav a {
         display: block;
         color: #000;
@@ -192,16 +196,10 @@ span {
         text-decoration: none;
     }
 
-    .main-header {
-        height: 100px;
-        margin-bottom: 2em;
-    }
-
     .my-name {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin: 1rem 0 1rem 0;
     }
-
 
     .intro-container {
         display: flex;
@@ -226,7 +224,6 @@ span {
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
-        max-width: 1024px;
         justify-content: center;
         background-color: white;
         margin: 0 2rem 0 2rem;
@@ -236,32 +233,49 @@ span {
         width: 50%;
     }
 
-    img,
+    h2,
     h3,
     p {
         width: 90%;
+        margin: auto;
     }
 }
 
-@media screen and (min-width:1024px) {
+/*
+===================================================
+ MEDIA QUERIES -  min-width 1025px
+===================================================*/
+
+@media screen and (min-width:1025px) {
     .main-header {
         flex-direction: row;
+        justify-content: flex-end;
+        margin: 1rem 2rem;
+
+
     }
 
-    .my-name {
+    .main-header a {
         margin-right: auto;
-        margin-left: 1em;
 
     }
 
     .nav {
         margin-top: 0;
         align-self: center;
-        margin-right: 2rem;
     }
 
     .nav li {
         margin-left: .65em;
         margin-right: .65em;
+    }
+
+    .intro-container p {
+        margin: 2rem;
+        font-size: 1.4rem;
+    }
+
+    .item {
+        width: 30%;
     }
 }
