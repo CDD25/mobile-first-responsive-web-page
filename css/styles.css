@@ -19,7 +19,18 @@ a {
     margin: 0;
     text-align: center;
     text-decoration: none;
-    color: black;
+}
+
+a:link {
+    color: #2572AA;
+}
+
+a:visited {
+    color: #2572AA;
+}
+
+a:hover {
+    color: #F78460;
 }
 
 ul {
@@ -83,7 +94,6 @@ MAIN STYLES
 
 .nav a {
     display: block;
-    color: #000;
     background-color: white;
     border: 2px solid #eeebeb7b;
     font-size: .85rem;
@@ -96,6 +106,7 @@ MAIN STYLES
 
 .my-name {
     font-size: 2.25em;
+    color: black
 }
 
 .intro-container img {
@@ -158,7 +169,7 @@ h4 {
 }
 
 span {
-    color: slategray;
+    color: gray;
     font-weight: bold;
 }
 
@@ -188,7 +199,6 @@ span {
 
     .nav a {
         display: block;
-        color: #000;
         background-color: transparent;
         border: none;
         padding: 0.7em;
@@ -266,13 +276,10 @@ span {
         flex-direction: row;
         justify-content: flex-end;
         margin: 1rem 2rem;
-
-
     }
 
     .main-header a {
         margin-right: auto;
-
     }
 
     .nav {
